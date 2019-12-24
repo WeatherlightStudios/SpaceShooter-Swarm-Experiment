@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Ship.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Spaceship-shooter-environment/spritesheets/ship.png" type="Texture" id=2]
+
+[node name="Ship" type="Node2D"]
+script = ExtResource( 1 )
+speed = 200
+
+[node name="CoreSprite" type="Sprite" parent="."]
+position = Vector2( 157.457, 407.136 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+vframes = 2
+hframes = 5
+frame = 2
+region_rect = Rect2( 36.73, 39, 0, 0 )
