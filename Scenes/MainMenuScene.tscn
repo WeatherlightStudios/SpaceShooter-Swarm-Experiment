@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Sprites/Enviroment/Moon.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Enviroment/Sprite-0009.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Enviroment/Enviroment-objects.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/MainMenu-Main.tscn" type="PackedScene" id=4]
+
+[sub_resource type="LargeTexture" id=1]
+resource_local_to_scene = true
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -1.948
+margin_bottom = -1.948
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Moon" type="TextureRect" parent="."]
+margin_left = 20.0
+margin_top = 131.902
+margin_right = 131.0
+margin_bottom = 242.902
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Sprite-0009" type="TextureRect" parent="."]
+margin_left = 104.013
+margin_top = 252.0
+margin_right = 426.013
+margin_bottom = 574.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = SubResource( 1 )
+
+[node name="Enviroment-objects" type="Sprite" parent="."]
+position = Vector2( 89.4486, 529.186 )
+texture = ExtResource( 3 )
+offset = Vector2( -27.7279, -8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Enviroment-objects3" type="Sprite" parent="."]
+position = Vector2( 123.126, 304.574 )
+texture = ExtResource( 3 )
+offset = Vector2( -27.7279, -8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Enviroment-objects7" type="Sprite" parent="."]
+position = Vector2( 274.996, 184.557 )
+texture = ExtResource( 3 )
+offset = Vector2( -27.7279, -8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Enviroment-objects4" type="Sprite" parent="."]
+position = Vector2( 299.259, 69.7302 )
+texture = ExtResource( 3 )
+offset = Vector2( -27.7279, -8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Enviroment-objects6" type="Sprite" parent="."]
+position = Vector2( 98.0015, 119.368 )
+texture = ExtResource( 3 )
+offset = Vector2( -27.7279, -8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Enviroment-objects5" type="Sprite" parent="."]
+position = Vector2( 160.274, 38.1426 )
+texture = ExtResource( 3 )
+offset = Vector2( -27.7279, -8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Enviroment-objects2" type="Sprite" parent="."]
+position = Vector2( 258.568, 626.319 )
+texture = ExtResource( 3 )
+offset = Vector2( -27.7279, -8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="MainMenu" parent="." instance=ExtResource( 4 )]
