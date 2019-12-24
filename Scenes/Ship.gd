@@ -6,6 +6,7 @@ export var sensitivity = 1
 
 var inputs = Vector2()
 
+# returns the input raw axis used for movement
 func get_raw_inputs():
 	var inputs = Vector2()
 	if Input.is_action_pressed("right"):
@@ -19,6 +20,8 @@ func get_raw_inputs():
 		inputs.y += 1
 	return inputs
 
+# Returns lerped inputs: the value goes linearly from 0 to
+# axis value (+1 or -1)
 func get_inputs(delta):
 	var raw = get_raw_inputs()
 	
@@ -43,7 +46,7 @@ func get_inputs(delta):
 	else:
 		inputs.y += raw.y * sensitivity * delta
 	inputs.y = clamp(inputs.y, -1, 1)
-	print(inputs)
+	
 	return inputs
 
 func _process(delta):
